@@ -10,20 +10,17 @@ import UIKit
 
 struct ContentView: View {
     var body: some View {
-        
         TabView {
             ListView()
             FinanceSummaryView()
         }
-        
     }
 }
     
 struct ListView: View {
 
-    
     init() {
-        UITableView.appearance().backgroundColor = UIColor(Color("LightSea")) // Uses UIColor
+        UITableView.appearance().backgroundColor = UIColor(Color("LightSea")) 
     }
     
     var body: some View {
@@ -37,9 +34,7 @@ struct ListView: View {
             .listStyle(InsetListStyle())
             .navigationBarItems(leading: EditButton())
             .navigationBarTitle("Owned cars")
-            
         }
-
         .tabItem {
             Label("Cars list", systemImage: "list.dash")
         }
@@ -55,36 +50,30 @@ struct ListItemView: View {
                 .scaledToFill()
                 .cornerRadius(10)
                 .frame(width: 100.0, height: 100.0, alignment: .leading)
-                
-            Spacer()
             VStack{
                 Text("BMW 530D")
                     .foregroundColor(Color("Sea"))
                     .bold()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                
-                Spacer()
-                Text("Year: 2010")
-                    .font(.system(size: 13))
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                Spacer()
-                Text("VIN: WBABZG9273627812")
-                    .font(.system(size: 13))
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                Spacer()
-                Text("Plate: BL 45141")
-                    .font(.system(size: 13))
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
-                
+                SmallCarRowText(text: "Year: 2010")
+                SmallCarRowText(text: "VIN: WBABZG9273627812")
+                SmallCarRowText(text: "Plate: BL 45141")
             }
-            
-            
-            
         }
         .padding()
         .background(Color("MainBeige"))
         .cornerRadius(10)
             
+    }
+}
+
+struct SmallCarRowText: View {
+    var text: String
+    
+    var body: some View {
+        Text(text)
+            .font(.system(size: 13))
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
     }
 }
 

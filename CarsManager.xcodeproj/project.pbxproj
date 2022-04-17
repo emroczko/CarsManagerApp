@@ -15,6 +15,8 @@
 		52494370280B543000017609 /* CarsManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249436F280B543000017609 /* CarsManagerUITests.swift */; };
 		52494372280B543000017609 /* CarsManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494371280B543000017609 /* CarsManagerUITestsLaunchTests.swift */; };
 		52494381280B659100017609 /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494380280B659100017609 /* UIScreen+extension.swift */; };
+		52CDF4F2280CBAA1006D8A7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494356280B542B00017609 /* ContentView.swift */; };
+		52CDF4F3280CBAA2006D8A7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494356280B542B00017609 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -270,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CDF4F2280CBAA1006D8A7F /* ContentView.swift in Sources */,
 				52494366280B543000017609 /* CarsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +283,7 @@
 			files = (
 				52494370280B543000017609 /* CarsManagerUITests.swift in Sources */,
 				52494372280B543000017609 /* CarsManagerUITestsLaunchTests.swift in Sources */,
+				52CDF4F3280CBAA2006D8A7F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
