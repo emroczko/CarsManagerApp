@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5232D1D8280CD9B400292143 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5232D1D7280CD9B300292143 /* Car.swift */; };
+		5244D618280D9E1B00C0AD88 /* CarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5244D617280D9E1B00C0AD88 /* CarsList.swift */; };
+		5244D61A280D9E4000C0AD88 /* CarsListTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5244D619280D9E4000C0AD88 /* CarsListTypeEnum.swift */; };
 		52494355280B542B00017609 /* CarsManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494354280B542B00017609 /* CarsManagerApp.swift */; };
 		52494357280B542B00017609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494356280B542B00017609 /* ContentView.swift */; };
 		52494359280B542F00017609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52494358280B542F00017609 /* Assets.xcassets */; };
@@ -15,6 +18,8 @@
 		52494370280B543000017609 /* CarsManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5249436F280B543000017609 /* CarsManagerUITests.swift */; };
 		52494372280B543000017609 /* CarsManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494371280B543000017609 /* CarsManagerUITestsLaunchTests.swift */; };
 		52494381280B659100017609 /* UIScreen+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494380280B659100017609 /* UIScreen+extension.swift */; };
+		52CDF4F2280CBAA1006D8A7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494356280B542B00017609 /* ContentView.swift */; };
+		52CDF4F3280CBAA2006D8A7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52494356280B542B00017609 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5232D1D7280CD9B300292143 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		5244D617280D9E1B00C0AD88 /* CarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsList.swift; sourceTree = "<group>"; };
+		5244D619280D9E4000C0AD88 /* CarsListTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTypeEnum.swift; sourceTree = "<group>"; };
 		52494351280B542B00017609 /* CarsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52494354280B542B00017609 /* CarsManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsManagerApp.swift; sourceTree = "<group>"; };
 		52494356280B542B00017609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +109,9 @@
 				52494358280B542F00017609 /* Assets.xcassets */,
 				5249435A280B542F00017609 /* Preview Content */,
 				52494380280B659100017609 /* UIScreen+extension.swift */,
+				5232D1D7280CD9B300292143 /* Car.swift */,
+				5244D617280D9E1B00C0AD88 /* CarsList.swift */,
+				5244D619280D9E4000C0AD88 /* CarsListTypeEnum.swift */,
 			);
 			path = CarsManager;
 			sourceTree = "<group>";
@@ -262,6 +273,9 @@
 			files = (
 				52494357280B542B00017609 /* ContentView.swift in Sources */,
 				52494355280B542B00017609 /* CarsManagerApp.swift in Sources */,
+				5232D1D8280CD9B400292143 /* Car.swift in Sources */,
+				5244D61A280D9E4000C0AD88 /* CarsListTypeEnum.swift in Sources */,
+				5244D618280D9E1B00C0AD88 /* CarsList.swift in Sources */,
 				52494381280B659100017609 /* UIScreen+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CDF4F2280CBAA1006D8A7F /* ContentView.swift in Sources */,
 				52494366280B543000017609 /* CarsManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +295,7 @@
 			files = (
 				52494370280B543000017609 /* CarsManagerUITests.swift in Sources */,
 				52494372280B543000017609 /* CarsManagerUITestsLaunchTests.swift in Sources */,
+				52CDF4F3280CBAA2006D8A7F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
