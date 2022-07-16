@@ -91,28 +91,7 @@ struct ListView: View {
 }
 
 
-struct AddNewCarView: View {
-    
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
-    @EnvironmentObject private var ownedCarsList: CarsList
-    @State var brand: String = ""
-    @State var model: String = ""
-    
-    
-    var body: some View {
-        Form {
-            TextField("Brand", text: $brand)
-                .padding()
-            TextField("Model", text: $model)
-                .padding()
-            Button("Add") {
-                ownedCarsList.cars.append(Car(vin: "WBADHWUA9283\(Int.random(in: 1...100))", brand: brand, model: model))
-                mode.wrappedValue.dismiss()
-            }
-            .padding()
-        }
-    }
-}
+
 
 struct ListItemView: View {
     
@@ -120,7 +99,7 @@ struct ListItemView: View {
     
     var body: some View {
         HStack{
-            Image("bmw5")
+            Image(uiImage: car.image)
                 .resizable()
                 .scaledToFill()
                 .cornerRadius(10)

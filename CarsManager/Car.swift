@@ -14,4 +14,5 @@ struct Car: Identifiable, Equatable {
     let brand: String
     let model: String
     let year: String = "2010"
+    let image: UIImage
 }
